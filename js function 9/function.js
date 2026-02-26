@@ -21,7 +21,7 @@ myfunction();
 //agar ek kaam baar baar karana ho toh tab function ka use hota hai call karte samay hum kai baarcall kar sakte hai vo same kaam ko baar baar karke de dega
 //ye function takes nothing return nothing type function hai.
 
-function hello(msg,){ //msg  parameter(input)bolte hai hume apna msg input print karana ho tab 
+function hello(msg){ //msg  parameter(input)bolte hai hume apna msg input print karana ho tab 
     console.log(msg);
 
 }
