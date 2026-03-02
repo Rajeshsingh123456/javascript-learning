@@ -68,4 +68,23 @@ console.log(d)//purana array aise hi rhega bs isme changes nhi hunge
 //map aur filter ke andar jo tu callback function likhta hai, use tu call nahi karta, 
 // balki JavaScript ka engine call karta hai array ke har element ke liye.isliye callback fun ko new variable me store karna hota hai
 
-//REDUCE METHOD=array ke upper kuch operation perform karna hai fir single value aani chahiye 
+//REDUCE METHOD= array ke upper kuch operation perform karega fir single value calculate karega vhi single value return kar dega.
+//use tab maan lo sum calculate karna hai average calculate karna hai input bhut si value hogi output me ek hi value aayegi . ex
+//ex sum calculate karna 
+const arrays=[1,2,3,4];
+
+const resulat1=arrays.reduce((result,current)=>{ // reduce me callback pass karege usme do value hunge privious and cuurent value (result or current bhi bol sakte hai)
+return result+current;
+});
+console.log(resulat1)//output =10 isme array ke element ka sum calculate kar ke de diya
+
+//array.reduce(result,current)=>{} toh result and current start hoti hai starting index ki do value ke sath 
+//index 0 and 1 se fir value  + karega ye result me 1 value cuurent me 2 value fir +hoga 3 ho gya + hokar vo result me store hota hai 3 result me gya 
+// current me bhi value 3 hi hai 2 thi ab vo 3 me chala jayega (2index me )fir dono+hunge 6 aayega vo result me jayega 6 fir cuurent 3 se 4 value ho jayegi fir + hoga 6+4 =10 result
+
+//ex find largest element from array 
+const e=[1,2,3,4,5];
+const result2=e.reduce((result,current)=>{
+    return result>current? result :current;// agar result ki value current se badi toh result return otherwise current
+});
+console.log(result2)
