@@ -1,0 +1,17 @@
+
+/* added css for just learn dom not for any style*/
+body {
+    background-color: bisque;
+    text-transform: capitalize;
+    margin: 0px;
+    padding: 0px;
+}
+
+#heading-id {
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+h3{
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
