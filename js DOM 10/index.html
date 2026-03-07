@@ -22,7 +22,9 @@ DOM (Document Object Model) JavaScript ka ek bohot important hissa hai jo aapke 
 2.Object: JavaScript ki nazar mein har cheez ek "object" hai. Har tag (div, h1, button) ke paas kuch Properties (jaise color, id) aur Methods (jaise click()) hote hain.
 <br>3. Model: Ye ek structure hai jo batata hai kaun kiska parent hai aur kaun kiska bachcha.</p>
 <p class="para">jab browser kisi HTML page ko load karta hai, toh vo us HTML ko DOM Tree me convert kar deta hai
-mtlb html k sare element ko object ya node bana deta hai </p>
+mtlb html k sare element ko object ya node bana deta hai 
+window; // isme ye sari method aa jayega isme iske under hi document hote hai uske under html head vgra vgra 
+document then html vgra</p>
 <button class="click">click  me</button>
 
 <h3 class="heading">DOM manipulation</h3>
@@ -33,7 +35,48 @@ mtlb html k sare element ko object ya node bana deta hai </p>
      <h2>dom manipulation Properties</h2>
     <p> Properties ka matlab hai aisi DOM properties jinki help se hum 
 element ko access karke uski value check ya change kar sakte hain.</p>
+<p> 1. tag name = ye return karta hai kisi bhi element node ka  tag names hum change bhi kar sakte hai </p>
+<p>1. innertext =return karega all element ka content with child element content. chnge bhi lar sakte hai text ko  ex</p>
+<h1> ex of innertext</h1>
+<div>
+    <h2>fruits</h2>
+    <ul>
+        <li> mangos</li>
+        <li> banana</li>
+        <li> litchi</li>
+    </ul>
+</div>
 
+<p>3. innerhtml = isme hume sare ke sare tags or content both aayenge inner text me bs text aata hai 
+    isme both tag or text both child node ka bhi  change bhi kar sakte hai 
+</p>
+<h1>ex of innerhtml</h1>
+<div class="exinnerhtml">
+    <h2>fruits</h2>
+    <ul>
+        <li>banana</li>
+        <li>banana</li>
+        <li>banana</li>
+    </ul>
+</div>
+<!-- ex of changes -->
+ <h1 id="chnge">heandig 1</h1>
+<p>4. text content= ye inner text ki tarah hi work kartahai but ye hidden eleemnt ke liye bhi kaam karta hai 
+    ex agar hum kisi elemet ko hide kar denge toh ye usme bhi kaam karega 
+</p>
+<h2 id="content"> ex of text content heading </h2>
+<!-- visibility css me hidden kar di ye heading nhi dikhegi toh ye js me text content lgaiye ye dikha dega -->
+<hr>
+
+<h2>DOM Manipulation  Attribute </h2>
+<p>attribute ka mtlb hai element ki undar  extra inforamtion (img me src link me src vgra ) 
+    JavaScript ki help se hum in attributes ko get, set, remove ya check kar sakte hain. ex </p>
+    <!-- <h3>ex = <img src="" alt=""> toh src attribute hai</h3> -->
+     <h4>  to get the attribute value(access the attribute value)</h4>
+     <p>getattribute(attribute). ex for div </p>
+     <div class="attribute">
+    ex for access to attribute value 
+     </div>
 <script src="script.js">
    
 </script>
