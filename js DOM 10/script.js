@@ -89,3 +89,19 @@ console.log(textcon.textContent)// dikh jayega vaha par ye
 let att=document.querySelector(".attribute");// attribute class hai usko select kar diya 
 console.log(att); // print kara diya pura div ko  ab  uske under class wali attribute haii uski value chahiye hume acces karni hai toh
 let value=att.getAttribute("class")// isme hume fun ko varible me store karke getattribute se class wali attribute ko select kar diya access kar diya ab iski value aa jayegi 
+console.log(value)
+
+//set attribute = attribute ki value chnge karni ho set attribute use karte hai 
+//ex syntex = setattribute(attribute,value) hum chah rhe ahi class ka name change akarna 
+let chnges =document.querySelector(".attribute-set")// class ko select kara diya 
+console.log(chnges);
+let newval=chnges.setAttribute("class" ,"change-attribute-value")// class uski purani attribute thi jiski value attribute-set thi usko likha fir uski new value jo dena chahte hai vo likh diya 
+console.log(newval)
+
+//3 style attribute =>it is use for change stylevalue of any element 
+//syntex = node.style 
+let stylediv=document.querySelector("#box");// div wala box ko sleect kar rhe ahi id se 
+console.log(stylediv.style);
+let nsty =stylediv.style.backgroundColor="green";// pehle html me background color black diya tha ab style change kar diye by style attribute propert toh green ho jayega4
+console.log(nsty)
+
