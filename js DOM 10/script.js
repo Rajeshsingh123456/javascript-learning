@@ -105,3 +105,45 @@ console.log(stylediv.style);
 let nsty =stylediv.style.backgroundColor="green";// pehle html me background color black diya tha ab style change kar diye by style attribute propert toh green ho jayega4
 console.log(nsty)
 
+
+
+//insert the element = new html element(tag) kaise add kare .step 1 create new element  = document.createelement ("jis tarah ka bhi eleemnt chahiye uska  tag name  likho")
+ //step 2 then add . ex button create karna hai
+ let btns=document.createElement("button");
+ btns.innerText="click me"
+ console.log(btns); // print kara diya create kar ke isko inner text bhi de diya click me karke 
+ //create toh kar liya ab screen me kaise dikhaye 4 way hote hai add karne ke 
+
+ //1 way append = syntex node.append(eleemnt)= jab hume kisi element ke last me hume new create eleemnt add karna ho tab use hota hai.
+let divinsert=document.querySelector("#boxof-insert"); //div ko acces kar liya 
+divinsert.append(btns);// jo btns me button create kiya tha apped se add kar diya last me
+
+
+// 2 way = prepend = start me element add karna ho  syntex node.prepend(element)
+// same ex 
+let divpre=document.querySelector("#boxof-insert");
+divpre.prepend(btns);// new button jo create kiya tha vo start me addd kar diya 
+
+
+//3 way = before = node ke bahar add karna ho just pehlesyntex =node.before(element ) 
+// ex dusra diya hai before-insert iski hai
+let newbtns= document.createElement("p")// humne ek paragraph element create kar diya ok jaise pehle btn element create kiya tha
+newbtns.innerText="this is paragraph for insert the element with before way"
+console.log(newbtns);// print kara diya hai ab hum add karege before se
+let beforenew=document.querySelector("#before-insert");// select kar diya hai 
+beforenew.before(newbtns);// isme pehle add kiya tha fir badd me add kar diya 
+ 
+
+
+//4way = after = node ke bahar add karna ho just bahar  syntex = node.after(element)
+// ex beforenew.after(newbtns);
+let newhe = document.createElement("h2");
+newhe.innerText="heading for paragraph";
+console.log(newhe);
+let afterh= document.querySelector(".after-add");
+afterh.after(newhe);// new heading ko p ke  niche add kar diya  just uske baad
+
+
+//this is use to delete the eleemnt (koi bhi el;eement ka text content pura element hata sakte hai bina new create kiye )   syntex = node.remove()
+let deletene=document.querySelector(".delete-eleement");
+deletene.remove(); // pura ka pura div delete ho jayega uske undar jitni bhi tags hungi sab delete ho jayega

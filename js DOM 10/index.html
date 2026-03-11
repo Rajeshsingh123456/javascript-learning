@@ -86,6 +86,43 @@ element ko access karke uski value check ya change kar sakte hain.</p>
         <p>it is use for change stylevalue of any element  </p>
      </div>
 
+<div id="insert"> insert the element = new html element(tag) kaise add kare .
+    <p>step 1 create new element  = document.createelement ("jis tarah ka bhi eleemnt chahiye uska  tag name  likho")</p>
+ <p>step 2 then add  </p>
+  let btns=document.createElement("button");
+ btns.innerText="click me"
+ console.log(btns); // print kara diya create kar ke isko inner text bhi de diya click me karke 
+ //create toh kar liya ab screen me kaise dikhaye 4 way hote hai add karne ke 
+<h4> 4 option hote hai </h4>
+<p>1 way= node.append(eleemnt)= jab hume kisi element ke last me hume new create eleemnt add karna ho tab use hota hai</p>
+<div id="boxof-insert"> this is a div 
+    <ul>
+        <li>item 1</li>
+        <li>item 2</li>
+        <li>item 3</li>
+    </ul>
+</div><!-- hum chahte hai iske baad button aa jaye jo js me create kiya hai div ke end me karna hai toh append ka use -->
+
+<p>2 way = prepend = start me element add karna ho 
+    syntex node.prepend(element) <!-- same ex me kiya hai -->
+</p>
+ <div  id="before-insert">
+<p>3 way = before = node ke bahar add karna ho just pehle
+    syntex =node.before(element ) </p>
+    </div>
+
+<p class="after-add"> 4way = after = node ke bahar add karna ho just bahar 
+    syntex = node.after(element)
+</p>
+
+</div>
+
+<div class="delete-eleement"> this is div for remove the element 
+    <p>this is use to delete the eleemnt (koi bhi el;eement ka text content pura element hata sakte hai bina new create kiye )
+        syntex = node.remove() </p>
+</div>
+<hr>
+
 <script src="script.js">
    
 </script>
