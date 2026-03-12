@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document event</title>
+    <link rel="stylesheet" href="event.css">
+</head>
+<body>
+
+    <h1>event in js</h1>
+<p>// event in js
+// event = the change in the state of an object is know as event (event basicly object ke through represent hote hai or ye  code ko btate hai ki kuch kaam huaa hai jaise button click huaa haiect)
+//Jab bhi user browser ke saath interact karta hai (jaise button click karna, mouse ghumana, ya keyboard par kuch type karna), toh ek event trigger hota hai.
+//Sochiye aapne ek "Submit" button banaya hai. Jab tak user use click nahi karega, kuch nahi hoga. Click karte hi ek "Event" generate hota hai use event bolte hai . 
+Hum JS mein Event Listeners ka use karte hain taaki hum us event ka intezaar kar sakein aur uspar koi action le sakein use event handling kehte hai .</p>
+
+    <h1>"Event Handler Properties</h1>
+    <p>in js so many types of event so go mdn and read</p>
+    <p>main 4 event is here</p>
+    <p>1.Mouse Events =( click,doubleclick ,mousedown, mouseup,mouseenter,mouseleave,etc)
+        <!--click: Jab user kisi element par ek baar click kare. (Sabse common)
+dblclick: Jab user mouse button ko do baar (double click) jaldi-jaldi dabaye.
+mousedown: Jab user mouse ka button dabaye (chhodne se pehle).
+mouseup: Jab user dabba hua mouse button chhode.
+mouseleave: Jab mouse cursor element se bahar nikal jaye.
+mouseenter:Ye event tab trigger hota hai jab mouse cursor element ki boundary ke andar enter karta hai.
+onmouseover :Ye event tab trigger hota hai jab mouse cursor element ya uske kisi bhi child element par enter karta hai.-->
+
+ 2. keyboard event = (keypress ,keyup,keydown)
+    <!--keydown: Jab user koi bhi key dabata hai. (Ye continuously chalta rehta hai agar aap key daba kar rakhein).
+    keyup: Jab user dabi hui key ko chhodta hai. (Ye tab use hota hai jab aapko check karna ho ki typing khatam hui ya nahi).
+keypress: (Ab ye purana ho gaya hai, iski jagah keydown use karein). Ye sirf character keys (a, b, 1) ke liye chalta tha.-->
+
+    3. form event = (submit,input ,change ,focus ,blur etc)
+    <!--submit: Jab user form ka "Submit" button dabata hai. Ye pure form par lagaya jata hai.
+input: Jab user kisi text box mein kuch bhi type karta hai (har ek letter par trigger hota hai).
+change: Jab user kisi dropdown (select) se value badalta hai ya checkbox tick karta hai.
+focus: Jab user kisi input box ke andar click karta hai (box active ho jata hai).
+blur: Jab user input box se bahar click karta hai (focus hat jata hai).
+-->
+
+    4. print event and many go mdn and read.
+    </p>
+    <h2>ex of Mouse Events </h2>
+ <button onclick="console.log('button has been clicked')"> click me</button>
+ <button ondblclick="console.log('button has clicked in 2 times')"> click me in 2 times</button><!-- isme do baar click karne se hoga -->
+ <div id="div-box" onmouseenter="console.log('you are enter inside the div')"> this is a div </div><!-- isme humne style lga ke onmouseenter ya onmouseover ka use karte hai -->
+
+ <h1>ye sara inline event handling hota hai isme hume html bahut kharab ho jata hai isliye hum js me event handling karte hai so les go in js</h1>
+ <button id="btn1"> click me by js </button>   
+ 
+ <script src="event.js"></script>
+</body>
+</html>
